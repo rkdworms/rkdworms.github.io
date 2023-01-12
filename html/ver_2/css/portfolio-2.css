@@ -1,0 +1,139 @@
+
+
+body{
+    background-color: #f7f9fc;
+}
+
+p{
+    margin-bottom: 5px;
+    letter-spacing: -1px;
+}
+
+a{
+    text-decoration: none;
+}
+
+.pb-10{
+    padding-bottom: 100px;
+}
+
+.lh-2{
+    line-height: 180%;
+}
+
+.container{
+    min-width: 431px;
+}
+
+.fs-7{
+    font-size:14px;
+}
+
+.user-img{
+    width: 150px;
+}
+
+.text-sky{
+    color: #6fbaf8 !important;
+}
+
+.btn-sky{
+    background-color: #6fbaf8;
+    color: white; 
+}
+
+.table{
+    width: 100%;
+    margin: 0;
+}
+
+.skill{
+    width: 110%;
+    position: relative;
+    left: -10px;
+}
+
+.sign-link{
+    transition: 0.21s;
+}
+
+.sign-link:hover{
+    transform: scale(1.02);
+}
+
+li .active{
+    border-bottom: 3px solid #6fbaf8!important; 
+    background-color: #f7f9fc!important;
+}
+
+td{
+    padding-top :3px !important;
+    padding-bottom: 3px !important;
+}
+
+.border-bold{
+    border-width: 10px;
+}
+
+.btn:hover{
+    background-color: #3ca7ff;
+    color: white; 
+}
+
+.btn:active{
+    background-color: #3ca7ff!important;
+    color: white!important; 
+}
+
+.skill>.content{
+    transition: 0.4s;
+    display: inline-block;
+}
+
+.skill>.content:hover{
+    cursor:default;
+    transform: scale(1.05);
+    background-color: rgba(221, 221, 221, 0.586);
+}
+
+.know{
+    display: none;
+}
+
+@media screen and (max-width: 992px){
+    .user-right{
+        border: none !important;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    .works{
+        height: 60%;
+    }
+
+    .about{
+        padding-top: 24px !important;
+        padding-bottom: 200px !important;
+    }
+
+    h2{
+        font-size: 24px;
+    }
+
+    .people{
+        display: flex;
+        justify-content: center;
+    }
+
+    .people-name{
+        font-size: 16px;
+    }
+
+    .know{
+        display: block;
+    }
+
+    .know-people{
+        overflow: auto;
+    }
+}

@@ -1,0 +1,105 @@
+@use "reset.css";
+
+$blue: #494CB4;
+$light-grey: #FAFAFA;
+$light-dark: #33393F;
+$grey: #808080;
+
+
+
+.bg-blue{
+    background-color: $blue;
+}
+
+.bg-light-dark{
+    background-color: $light-dark;
+}
+
+.bg-light-dark:hover{
+    background-color: #505860;
+}
+
+.bg-light-grey{
+    background-color: $light-grey;
+}
+
+.text-grey{
+    color: $grey;
+}
+
+
+.sidebar{
+    width: 40px;
+    height: 100%;
+    z-index: 1;
+    position: absolute;
+    transition: all 0.5s;
+}
+
+.sidebar:hover{
+    width: 150px;
+
+    .menu-name{
+        transform: translateX(0px);
+    }
+    .icon{
+        display:inline-block;
+        transform: translateX(0px);
+    }
+}
+
+.icon{
+    display:inline-block;
+    transition: all 0.5s;
+    transform: translateX(-13px);
+}
+
+.menu-list{
+    min-width: 150px;
+}
+
+.menu-name{
+    transition: all 0.5s;
+    display: inline-block;
+    font-size: 18px;
+    transform: translateX(-130px);
+}
+
+.sidebar i{
+    display: block;
+    text-align: center;
+
+}
+
+.navbar{
+    width: calc( 100vw - 40px );
+    float: right;
+}
+
+.search-input{
+    width: 150px !important;
+    transition: all 0.7s;
+}
+
+.search-input:focus{
+    width: 350px !important;
+}
+
+.alarm-number{
+    font-size: 8px;
+    padding: 4px;
+    border-radius: 4px;
+    position: relative;
+    top: -13px;
+    left: -10px;
+}
+
+.alarm-bg-red{
+    background-color: #DC3444;
+    color: white;
+}
+
+.content-box{
+    width: calc( 100vw - 40px );
+    float: right;
+}
