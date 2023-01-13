@@ -11,8 +11,8 @@
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!--Bootstarp use-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <!--main css-->
     <link rel="stylesheet" href="css/portfolio-3.css">
 
@@ -69,9 +69,78 @@
     <main class="content-box bg-light-grey p-3 pt-4">
         <div class="dashboard">
             <h3>Dashboard</h3>
+            <div class="cardlist row">
+                <div class="outer bg-sky col m-3">
+                    <div class="inner card-contents-align shadow-sm p-4">
+                        <div class="card-text col-8">
+                            <p>Earnings(Monthly)</p>
+                            <p class="fs-4 fw-semibold">$400,000</p>
+                        </div>
+                        <div class="dash-icon col-2"><i class="fa-solid fa-suitcase fa-2x"></i></div>
+                    </div>
+                </div>
+
+                <div class="outer bg-green col m-3">
+                    <div class="inner card-contents-align shadow-sm p-4">
+                        <div class="card-text col-8">
+                            <p>Earnings(Annual)</p>
+                            <p class="fs-4 fw-semibold">$800,000</p>
+                        </div>
+                        <div class="dash-icon col-2"><i class="fa-solid fa-dollar-sign fa-2x"></i></div>
+                    </div>
+                </div>
+
+                <div class="outer bg-blue col m-3">
+                    <div class="inner card-contents-align shadow-sm p-4">
+                        <div class="card-text col-8">
+                            <p>Tasks</p>
+                            <p class="fs-4 fw-semibold">13</p>
+                        </div>
+                        <div class="dash-icon col-2"><i class="fa-solid fa-list fa-2x"></i></div>
+                    </div>
+                </div>
+
+                <div class="outer bg-yellow col m-3">
+                    <div class="inner card-contents-align shadow-sm p-4">
+                        <div class="card-text col-8">
+                            <p>Requests</p>
+                            <p class="fs-4 fw-semibold">26</p>
+                        </div>
+                        <div class="dash-icon col-2"><i class="fa-solid fa-comments fa-2x"></i></div>
+                    </div>
+                </div>
+
+            </div>
+            <div>
+                <canvas id="myChart"></canvas>
+            </div>
         </div>
     </main>
 
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <script>
+        const ctx = document.getElementById('myChart');
+
+        new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+                datasets: [{
+                    label: '# of Votes',
+                    data: [12, 19, 3, 5, 2, 3],
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            }
+        });
+    </script>
 </body>
 
 </html>

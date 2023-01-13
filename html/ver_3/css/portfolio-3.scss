@@ -4,11 +4,28 @@ $blue: #494CB4;
 $light-grey: #FAFAFA;
 $light-dark: #33393F;
 $grey: #808080;
+$sky: #89CFEB;
+$green: #41C95A;
+$yellow: #FFCB55;
 
-
+p{
+    margin-bottom: 5px;
+}
 
 .bg-blue{
     background-color: $blue;
+}
+
+.bg-sky{
+    background-color: $sky;
+}
+
+.bg-yellow{
+    background-color: $yellow;
+}
+
+.bg-green{
+    background-color: $green;
 }
 
 .bg-light-dark{
@@ -103,3 +120,42 @@ $grey: #808080;
     width: calc( 100vw - 40px );
     float: right;
 }
+
+.dash-icon{
+    text-align: center;
+    color: #808080;
+}
+
+.cardlist{
+    height: 150px;
+}
+
+.card{
+    border : none;
+    position: relative;
+    z-index: 2;
+}
+
+.card-contents-align{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.outer{
+    position: relative;
+    left:-1px;
+    border-radius: 5px;
+}
+
+.inner{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 3px;
+    top: 0px;
+    border-radius: 2px 5px 5px 2px;
+    background-color: white;
+}
+
