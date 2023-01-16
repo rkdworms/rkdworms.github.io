@@ -316,23 +316,23 @@ p {
 }
 
 .bg-blue {
-  background-color: #494CB4;
+  background-color: #494cb4;
 }
 
 .bg-sky {
-  background-color: #89CFEB;
+  background-color: #89cfeb;
 }
 
 .bg-yellow {
-  background-color: #FFCB55;
+  background-color: #ffcb55;
 }
 
 .bg-green {
-  background-color: #41C95A;
+  background-color: #41c95a;
 }
 
 .bg-light-dark {
-  background-color: #33393F;
+  background-color: #33393f;
 }
 
 .bg-light-dark:hover {
@@ -340,7 +340,7 @@ p {
 }
 
 .bg-light-grey {
-  background-color: #FAFAFA;
+  background-color: #fafafa;
 }
 
 .text-grey {
@@ -412,12 +412,13 @@ p {
 }
 
 .alarm-bg-red {
-  background-color: #DC3444;
+  background-color: #dc3444;
   color: white;
 }
 
 .content-box {
   width: calc(100vw - 40px);
+  height: calc(100vh - 62px);
   float: right;
 }
 
@@ -433,7 +434,6 @@ p {
 .card {
   border: none;
   position: relative;
-  z-index: 2;
 }
 
 .card-contents-align {
@@ -457,4 +457,13 @@ p {
   top: 0px;
   border-radius: 2px 5px 5px 2px;
   background-color: white;
+}
+
+.bottom-contents {
+  justify-content: space-between;
+}
+
+.card-body {
+  width: 100%;
+  height: 60vh;
 }/*# sourceMappingURL=portfolio-3.css.map */

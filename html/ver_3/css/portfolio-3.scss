@@ -1,161 +1,167 @@
 @use "reset.css";
 
-$blue: #494CB4;
-$light-grey: #FAFAFA;
-$light-dark: #33393F;
+$blue: #494cb4;
+$light-grey: #fafafa;
+$light-dark: #33393f;
 $grey: #808080;
-$sky: #89CFEB;
-$green: #41C95A;
-$yellow: #FFCB55;
+$sky: #89cfeb;
+$green: #41c95a;
+$yellow: #ffcb55;
 
-p{
-    margin-bottom: 5px;
+p {
+  margin-bottom: 5px;
 }
 
-.bg-blue{
-    background-color: $blue;
+.bg-blue {
+  background-color: $blue;
 }
 
-.bg-sky{
-    background-color: $sky;
+.bg-sky {
+  background-color: $sky;
 }
 
-.bg-yellow{
-    background-color: $yellow;
+.bg-yellow {
+  background-color: $yellow;
 }
 
-.bg-green{
-    background-color: $green;
+.bg-green {
+  background-color: $green;
 }
 
-.bg-light-dark{
-    background-color: $light-dark;
+.bg-light-dark {
+  background-color: $light-dark;
 }
 
-.bg-light-dark:hover{
-    background-color: #505860;
+.bg-light-dark:hover {
+  background-color: #505860;
 }
 
-.bg-light-grey{
-    background-color: $light-grey;
+.bg-light-grey {
+  background-color: $light-grey;
 }
 
-.text-grey{
-    color: $grey;
+.text-grey {
+  color: $grey;
 }
 
-
-.sidebar{
-    width: 40px;
-    height: 100%;
-    z-index: 1;
-    position: absolute;
-    transition: all 0.5s;
+.sidebar {
+  width: 40px;
+  height: 100%;
+  z-index: 1;
+  position: absolute;
+  transition: all 0.5s;
 }
 
-.sidebar:hover{
-    width: 150px;
+.sidebar:hover {
+  width: 150px;
 
-    .menu-name{
-        transform: translateX(0px);
-    }
-    .icon{
-        display:inline-block;
-        transform: translateX(0px);
-    }
-}
-
-.icon{
-    display:inline-block;
-    transition: all 0.5s;
-    transform: translateX(-13px);
-}
-
-.menu-list{
-    min-width: 150px;
-}
-
-.menu-name{
-    transition: all 0.5s;
+  .menu-name {
+    transform: translateX(0px);
+  }
+  .icon {
     display: inline-block;
-    font-size: 18px;
-    transform: translateX(-130px);
+    transform: translateX(0px);
+  }
 }
 
-.sidebar i{
-    display: block;
-    text-align: center;
-
+.icon {
+  display: inline-block;
+  transition: all 0.5s;
+  transform: translateX(-13px);
 }
 
-.navbar{
-    width: calc( 100vw - 40px );
-    float: right;
+.menu-list {
+  min-width: 150px;
 }
 
-.search-input{
-    width: 150px !important;
-    transition: all 0.7s;
+.menu-name {
+  transition: all 0.5s;
+  display: inline-block;
+  font-size: 18px;
+  transform: translateX(-130px);
 }
 
-.search-input:focus{
-    width: 350px !important;
+.sidebar i {
+  display: block;
+  text-align: center;
 }
 
-.alarm-number{
-    font-size: 8px;
-    padding: 4px;
-    border-radius: 4px;
-    position: relative;
-    top: -13px;
-    left: -10px;
+.navbar {
+  width: calc(100vw - 40px);
+  float: right;
 }
 
-.alarm-bg-red{
-    background-color: #DC3444;
-    color: white;
+.search-input {
+  width: 150px !important;
+  transition: all 0.7s;
 }
 
-.content-box{
-    width: calc( 100vw - 40px );
-    float: right;
+.search-input:focus {
+  width: 350px !important;
 }
 
-.dash-icon{
-    text-align: center;
-    color: #808080;
+.alarm-number {
+  font-size: 8px;
+  padding: 4px;
+  border-radius: 4px;
+  position: relative;
+  top: -13px;
+  left: -10px;
 }
 
-.cardlist{
-    height: 150px;
+.alarm-bg-red {
+  background-color: #dc3444;
+  color: white;
 }
 
-.card{
-    border : none;
-    position: relative;
-    z-index: 2;
+.content-box {
+  width: calc(100vw - 40px);
+  height: calc(100vh - 62px);
+  float: right;
 }
 
-.card-contents-align{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+.dash-icon {
+  text-align: center;
+  color: #808080;
 }
 
-.outer{
-    position: relative;
-    left:-1px;
-    border-radius: 5px;
+.cardlist {
+  height: 150px;
 }
 
-.inner{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    left: 3px;
-    top: 0px;
-    border-radius: 2px 5px 5px 2px;
-    background-color: white;
+.card {
+  border: none;
+  position: relative;
 }
 
+.card-contents-align {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.outer {
+  position: relative;
+  left: -1px;
+  border-radius: 5px;
+}
+
+.inner {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 3px;
+  top: 0px;
+  border-radius: 2px 5px 5px 2px;
+  background-color: white;
+}
+
+.bottom-contents {
+  justify-content: space-between;
+}
+
+.card-body {
+  width: 100%;
+  height: 60vh;
+}
